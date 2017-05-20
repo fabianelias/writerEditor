@@ -1,0 +1,126 @@
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+.logo{
+  margin-top: 11px;
+}
+.font-weight-300{
+  font-weight: 300;
+}
+.font-weight-400{
+  font-weight: 400;
+}
+.font-weight-500{
+  font-weight: 500;
+}
+.font-weight-600{
+  font-weight: 600;
+}
+
+/* separaciones */
+.separate-30{
+  height: 30px;
+  width: 100%;
+}
+.separate-70{
+  height: 70px;
+  width: 100%;
+}
+
+.separate-100{
+  height: 100px;
+  width: 100%;
+}
+
+.separate-150{
+  height: 150px;
+  width: 100%;
+}
+
+.separate-200{
+  height: 200px;
+  width: 100%;
+}
+.height-100{
+  height: 100% !important;
+}
+
+/**
+* tamaño letras
+*/
+.letra-12{
+  font-size: 12px !important;
+}
+.letra-15{
+  font-size: 15px !important;
+}
+.letra-18{
+  font-size: 18px !important;
+}
+.letra-25{
+  font-size: 25px !important;
+}
+.letra-30{
+  font-size: 30px !important;
+}
+.letra-40{
+  font-size: 48px !important;
+  font-family: Whitney,serif;
+}
+.titlePost{
+  padding:0 !important;
+  height:50px !important;
+  border: 0 !important;
+  width: 100% !important;
+  font-size: 38px !important;
+  border-radius: 0 !important;
+}
+.bodyPost{
+  min-height:50px;
+  font-size: 25px !important;
+  line-height: 38px;
+  font-family: Mercury,serif;
+  white-space: pre-wrap !important;
+}
+.btn-block{
+  width:100%;
+}
+
+.titlePages{
+  background: linear-gradient(to left top,#673ab7,#7e57c2, #9575cd,#7e57c2,#673ab7);
+}
+
+.border-post {
+  border-bottom: 1px solid #f2f2fc;
+}
+.shadow-nav{
+  box-shadow: 0px 0px 0px 0px white !important;
+  border-bottom:0px solid #e7e7e7 !important;
+}
+.postBodyText {
+    line-height: 38px;
+    white-space: pre-wrap;
+}
+.btn-new-post {
+  background-color: rgba(0,0,0,.1);
+  box-shadow: none;
+}
+.tags {
+  padding: 4px;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.deleteJob{
+  margin-top: 25px;
+  float: right;
+  cursor: pointer;
+}
