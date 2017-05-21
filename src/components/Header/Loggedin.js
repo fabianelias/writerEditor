@@ -8,6 +8,7 @@ import logo from './assets/logo.svg'
 
 const info = JSON.parse(getInfoUser());
 
+
 function logout(){
   const removeSession = logoutHelper();
   if (removeSession) {
@@ -18,7 +19,7 @@ function logout(){
   }
 }
 export const LoggedNav = () => (
-  <div className='navbar-fixed'>
+  <div className='' id='navMaster'>
     <nav className="deep-purple shadow-nav-logged">
      <div className="container nav-wrapper">
        <Link to='/explore' className="brand-logo font-weight-300 white-text">
