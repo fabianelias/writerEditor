@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_search" stroke="#8392A6">
+            <circle id="Oval-3" cx="8" cy="8" r="7.5"></circle>
+            <rect id="Rectangle-13" transform="translate(18.696699, 18.696699) rotate(-315.000000) translate(-18.696699, -18.696699) " x="13.6966991" y="17.1966991" width="10" height="3" rx="1.5"></rect>
+            <path d="M13.310791,13.310791 L14.5,14.5" id="Line" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
