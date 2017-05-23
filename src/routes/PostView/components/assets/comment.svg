@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_annotation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="ic_annotation" stroke="#8392A6">
+            <g id="Page-1">
+                <path d="M0.5,23.4932 L12.28,23.4932 L12.349,23.4972 C18.539,23.3132 23.5,18.2362 23.5,12.0002 C23.5,5.6492 18.353,0.5002 12.001,0.5002 C5.65,0.5002 0.5,5.6492 0.5,12.0002 C0.5,15.1332 1.752,17.9732 3.784,20.0482" id="Stroke-1"></path>
+                <path d="M3.7842,20.0479 L0.5002,23.4929" id="Stroke-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

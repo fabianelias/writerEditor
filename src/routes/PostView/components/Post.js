@@ -3,19 +3,22 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import Spinner from 'react-spinkit'
 
+// import
+import commentImg from './assets/comment.svg'
+
 // Component
 class Post extends Component {
     componentDidMount(){
       var identifier_post = this.props.params.identifierPost
       this.props.fetchPost(identifier_post);
     }
-    componentWillMount () {
-      //console.log('willMount');
-    }
-    componentWillUnmount() {
-     //console.log('UNMOUNTED');
-    }
+    commentPost = () => {
+      var bodyComment = document.getElementById("commentNew").value;
+      var identifier_post = this.props.params.identifierPost;
 
+      this.props.putComment(bodyComment,identifier_post)
+      $("#commentNew").val('');
+    }
     render () {
         const {fetchPost, post:{fetching, json}} = this.props
 
@@ -23,7 +26,7 @@ class Post extends Component {
             <section className='white'>
               {
                 json.map(post => (
-                <div className='container' key={post._id}>
+                <div className='container' key={post._id} id="post">
                     <div className='row'>
                         <div className='col s12 m12'>
                           <div className='separate-30'></div>
@@ -57,10 +60,28 @@ class Post extends Component {
                       </div>
                       <div className='center col s12 l12 m12'>
                         <div className='separate-70'></div>
-                        <h5 className='letra-18 font-weight-300'>No se han realizados comentarios todavía.</h5>
                           <div className='col s12 m3 l3'></div>
                           <div className='col s12 m6 l6'>
-                            <textarea id="commentNew" className="materialize-textarea" placeholder='Escribe un comentario...'></textarea>
+                            <div className=''>
+                              <textarea id="commentNew" className="materialize-textarea" placeholder='Escribe un comentario...'></textarea>
+                              <br/>
+                              <a className='btn btn-flat blue-grey white-text' onClick={this.commentPost}>Comentar</a>
+                            </div>
+                            <h5 className='font-weight-300' style={{color:'#8392A6'}}>Comentarios. <img src={commentImg}/></h5>
+                              {
+                                post._comments ?
+                                  post._comments.map(comment => (
+                                    <div className='' key={comment._id}>
+                                        <div className='col s12 m12 l12 left comment-post'>
+                                          <h6 className='font-weight-600 left-text'>por <i>{comment._creator.username}</i></h6>
+                                            <span className="font-weight-300 grey-text">{comment.text}</span>
+                                        </div>
+                                    </div>
+
+                                  ))
+                                  :  <h5>Sin comentarios</h5>
+
+                              }
                           </div>
                         <div className='col s12 m3 l3'></div>
                       </div>
