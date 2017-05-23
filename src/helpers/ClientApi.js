@@ -33,4 +33,7 @@ api.new = api.url + path.version + 'post/'
 // obtener todos los post para "explore"
 api.posts = api.url + path.version + 'posts/'
 
+// comentar post
+api.comment = api.url + path.version + 'comment/'
+
 export default api

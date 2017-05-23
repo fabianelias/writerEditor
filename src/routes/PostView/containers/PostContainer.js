@@ -1,10 +1,11 @@
 // imports
 import { connect } from 'react-redux'
-import { fetchPost } from '../modules/post'
+import { fetchPost, putComment } from '../modules/post'
 import Post from '../components/Post'
 
 const mapDispatchtoProps = {
-  fetchPost
+  fetchPost,
+  putComment,
 }
 
 const mapStateToProps = (state) => ({
