@@ -6,23 +6,23 @@ import HomeImgSection1 from '../.././assets/hme.svg'
 
 // const section one
 export const SectionOne = () => (
-  <section className='white sectionOne'>
+  <section className='deep-purple sectionOne'>
       <div className="container">
         <div className='separate-100 hide-on-small-only'></div>
           <div className='row'>
               <div className='col s12 m5 l5'>
                   <div className='separate-70'></div>
-                  <h4 className='left deep-purple-text font-weight-600'>
+                  <h4 className='left white-text font-weight-400'>
                     Escribir, leer y publicar
                   </h4>
-                  <h5 className='left font-weight-300 letra-15 grey-text'>
+                  <h5 className='left font-weight-300 letra-15' style={{color:'#c4c4c4',lineHeight:'2'}}>
                     Escribir, leer y publicar historias ahora
                     más fácil.<br/>
                     Crea tu cuenta en simples pasos y comienza
                     a <br/>escribir tus historias.
                     <br/>
                     <br/>
-                    <Link to='/login' className='btn btn-flat blue-grey white-text letra-12 font-weight-300'>
+                    <Link to='/login' className='btn  white-text letra-12 font-weight-300'>
                       Comenzar
                     </Link>
                   </h5>
@@ -31,7 +31,7 @@ export const SectionOne = () => (
                   <img className='section-uno' src={HomeImgSection1} />
               </div>
           </div>
-          <div className='separate-100'></div>
+          <div className='separate-30'></div>
       </div>
   </section>
 )
