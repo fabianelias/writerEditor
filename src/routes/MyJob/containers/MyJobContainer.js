@@ -1,10 +1,11 @@
 import { connect } from 'react-redux'
-import { fetchJob } from '../modules/myjob'
+import { fetchJob, deleteJob } from '../modules/myjob'
 
 import Myjob from '../components/MyJob'
 
 const mapDispatchtoProps = {
   fetchJob,
+  deleteJob,
 }
 
 const mapStateToProps = (state) => ({
