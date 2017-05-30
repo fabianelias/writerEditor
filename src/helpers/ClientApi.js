@@ -36,4 +36,7 @@ api.posts = api.url + path.version + 'posts/'
 // comentar post
 api.comment = api.url + path.version + 'comment/'
 
+// eliminar post
+api.deletePost = api.url + path.version + 'post/'
+
 export default api

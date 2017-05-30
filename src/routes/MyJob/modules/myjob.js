@@ -21,6 +21,7 @@ export const receiveJob = (value) => ({
   payload: value.data
 })
 
+//
 export function fetchJob () {
    return (dispatch, getState) => {
 
@@ -40,6 +41,21 @@ export function fetchJob () {
    }
 }
 
+// delete post
+export function deleteJob (identifier_post) {
+  return (dispatch, getState) => {
+
+      return fetch(api.deletePost + identifier_post + '/delete' ,{
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json',
+              'x-access-token' : info.appSession
+            }
+          })
+        .then(data => data.json())
+        .then(json => dispatch(fetchJob()))
+  }
+}
 export const actions = {
  requestJob,
  receiveJob,

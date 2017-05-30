@@ -80,7 +80,7 @@ export default class New extends Component {
                      <SweetAlert
                       show={this.state.show}
                       title="Publicar"
-                      text="Al publicar será visible para todos los usuarios de write. ¿estás seguro?"
+                      text="Al publicar será visible para todos los usuarios. ¿estás seguro?"
                       showCancelButton
                       onConfirm={this.hiddenAlert}
                       onCancel={() => {
