@@ -42,7 +42,7 @@ export const LoggedNav = () => (
            </Link>
          </li>
          <li>
-           <Link to='/login' className='grey-text letra-12 font-weight-300'>
+           <Link to={'/@' + info.username} className='grey-text letra-12 font-weight-300'>
              <div className="chip">
               Hola @{info.username}
             </div>

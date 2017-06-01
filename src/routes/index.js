@@ -14,6 +14,8 @@ import MyJobRoute from './MyJob'
 import PostRoute from './PostView'
 import newPostRoute  from './PostNewView'
 
+import ProfilePrivateRoute from './ProfilePrivate'
+
 export const createRoutes = (store) => ({
   path: '/',
   component: CoreLayout,
@@ -29,6 +31,7 @@ export const createRoutes = (store) => ({
     MyJobRoute(store),
     PostRoute(store),
     newPostRoute(store),
+    ProfilePrivateRoute(store),
     Redirect
   ]
 })

@@ -72,9 +72,16 @@ export default class Login extends Component {
       const { fetchLogin, login: {fetching, json} } = this.props
 
       return (
+        <div>
+        <section className='white' style={{marginTop:'0px'}}>
+          <div className='container center'>
+            <div className='separate-30'></div>
+            <h1 className=' letra-25 font-weight-300'>Ingresar a tu cuenta</h1>
+          </div>
+        </section>
         <section className='white'>
             <div className='container'>
-                <div className='separate-100'></div>
+                <div className='separate-70'></div>
                 <div className='row'>
                     <div className='col s12 m4'></div>
                     <div className='col s12 m4'>
@@ -90,7 +97,7 @@ export default class Login extends Component {
                             </div>
                           </div>
                           <div className="row center">
-                            <button className="blue-grey btn waves-effect waves-light letra-12" type="submit" name="action">
+                            <button className="btn waves-effect waves-light letra-12" type="submit" name="action">
                               {fetching ? 'Espere...' : 'Comenzar'}
                              </button>
                           </div>
@@ -101,6 +108,7 @@ export default class Login extends Component {
                 <div className='separate-100'></div>
             </div>
         </section>
+        </div>
       )
   }
 }
